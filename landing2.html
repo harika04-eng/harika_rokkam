@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Landing Page with Login</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"],
+        .login-form input[type="submit"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about-content img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .about-content p {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .program {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .testimonial {
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our College</h1>
+        <h2>GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING</h2>
+
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="C:\Users\lenovo\Pictures\gvp1.jfif" alt="College Building">
+                <p>Gayatri Vidya Parishad is an Educational Society established by a group of erudite academicians of Visakhapatnam City in the year 1988 and supported by a number of industrialists and philanthropists of the city.</p>
+            </div>
+        </section>
+
+        <section class="section programs">
+            <h2>Branches</h2>
+            <div class="program">
+                <h3>compuer science</h3>
+                <p>Explore our undergraduate programs designed to prepare you for the future.</p>
+            </div>
+            <div class="program">
+                <h3>Electrical comunication engineering</h3>
+                <p>Advance your career with our graduate programs led by expert faculty.</p>
+            </div>
+            <div class="program">
+                <h3>Electrical electronic engineering</h3>
+                <p>Join our research community and contribute to cutting-edge knowledge.</p>
+            </div>
+        </section>
+
+        <section class="section testimonial">
+            <h2>Student Testimonials</h2>
+            <p>"This college has provided me with invaluable experiences and a solid foundation for my career."</p>
+        </section>
+    </div>
+</body>
+</html>
